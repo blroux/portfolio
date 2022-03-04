@@ -33,7 +33,7 @@ header div h1 a {
 .main_visual {
     width: 100%;
     height: 800px;
-    background: url('../images/visual1-3.jpg') center center / cover no-repeat;
+    background: url('../images/main_banner.jpg') center center / cover no-repeat;
     background-attachment: fixed;
     color: #fff;
     display: flex;
@@ -115,7 +115,10 @@ header div h1 a {
     padding: 0 25px; /* 위에 li말고 a값에 패딩을 잡아주면 버튼 빈공간도 클릭에 반응하게됨 */
 }
 .best .best_box .info ul li:first-of-type {
-    background-color: #333;
+    /* background-color: #333; */
+    background: rgb(52,7,179);
+    background: linear-gradient(90deg, rgba(52,7,179,1) 20%, rgba(73,100,219,1) 59%, rgba(0,212,255,1) 83%);
+/* 버튼에 그라데이션 색상 추가 (cssgradient.io 사이트에서 추출 */
 }
 .best .best_box .info ul li:first-of-type a {
     color: #fff;
