@@ -392,9 +392,18 @@ footer p {
 .web_wrap .web_box .info {  
     padding-top: 20px;
 }
+.web_wrap .web_box .web .info .btn li a:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    overflow: hidden;
+}
 .web_wrap .web_box .web .info .btn li:first-of-type {
     background-color: #e75b75;
     border-color: #e75b75;
+}
+
+.web_wrap .web_box .web .info .btn li:last-of-type {
+    border: 2px solid rgb(92, 92, 92);
 }
 
 /* .info 공통스타일 */
@@ -407,7 +416,7 @@ footer p {
 .info ul li:first-of-type {
     /* background-color: #333; */
     background: #e75b75
-    border: 1px solid ;
+    /* border: 1px solid ; */
 }
 
 .info ul li {
