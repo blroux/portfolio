@@ -25,6 +25,12 @@ html, body {
     font-style: normal;
 }
 
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+ font-family: 'Nanum Gothic', sans-serif;
+}
+
 /* header */
 header {
     height: 80px;
@@ -96,12 +102,14 @@ header div h1 a {
     width: 40%;
 }
 .best .best_box .info .cate {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
+    font-family: 'Nanumgothic';
 /*     border: 1px solid #aec6e0; */
 background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(194,208,223,1) 26%, rgba(174,198,224,1) 68%);
     color: #333;
+    display: inline-block;
 }
 .best .best_box .info h4 {
     font-size: 30px;
@@ -128,14 +136,17 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(194,208,223,1) 2
     line-height: 45px;
     border: 2px solid rgb(92, 92, 92);
     margin-right: 10px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+}
+.best .best_box .info ul li:nth-of-type(1) {
+    border: 2px solid #e75b75;
 }
 
 .best .best_box .info ul li a {
     padding: 0 25px; /* 위에 li말고 a값에 패딩을 잡아주면 버튼 빈공간도 클릭에 반응하게됨 */
 }
 .best .best_box .info ul li a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 1.5s;
     overflow: hidden;
 }
@@ -192,8 +203,9 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(194,208,223,1) 2
     background-color: #333;
 } */
 .youtube_wrap .youtube_menu li.on {
-    background-color: #4693e6;
+    background-color: rgb(63, 141, 224);
     box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.3);
+    border-color: rgb(63, 141, 224);
 }
 .youtube_wrap .youtube_menu li.on a {
     color: #fff;
@@ -236,6 +248,9 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(194,208,223,1) 2
 .youtube_wrap .menu_cont .box .info {
     padding: 30px;
 }
+.info p {
+    font-family: 'Nanumgothic';
+}
 .info h4 {
     font-size: 30px;
     margin-bottom: 20px;
@@ -247,6 +262,10 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(194,208,223,1) 2
 .info dl dt {
     width: 20%;
     font-weight: bold;
+/*     font-family: 'Nanum Gothic' */
+}
+.info dl dd {
+/*     font-family: 'Nanum Gothic' */
 }
 .info dl dd a {
     font-weight: bold;
@@ -383,9 +402,8 @@ footer p {
 .info ul {display: flex; margin-top: 30px;}
 .info ul li:first-of-type {
     /* background-color: #333; */
-    background: rgb(231,91,117);
-    background: linear-gradient(90deg, rgba(231,91,117,1) 0%, rgba(226,171,181,1) 100%);
-    border: 1px solid rgb(231,91,117);
+    background: #e75b75
+    border: 1px solid #e75b75;
 }
 
 .info ul li {
