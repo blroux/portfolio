@@ -376,7 +376,7 @@ footer p {
     flex-wrap: wrap;
 }
 .web_wrap .web_box .web {
-    width: 32%; /* 박스 몇개 배치할건지에따라 % 바꿔준다. */
+    width: 48%; /* 박스 몇개 배치할건지에따라 % 바꿔준다. */
     margin-bottom: 50px;
 }
 .web_wrap .web_box .web figure { 
@@ -392,6 +392,10 @@ footer p {
 .web_wrap .web_box .info {  
     padding-top: 20px;
 }
+.web_wrap .web_box .web .info .btn li:first-of-type {
+    background-color: #e75b75;
+    border-color: #e75b75;
+}
 
 /* .info 공통스타일 */
 .info .text {
@@ -403,7 +407,7 @@ footer p {
 .info ul li:first-of-type {
     /* background-color: #333; */
     background: #e75b75
-    border: 1px solid #e75b75;
+    border: 1px solid ;
 }
 
 .info ul li {
